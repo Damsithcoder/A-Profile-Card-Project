@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap'); </style>
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      display: flex;
+      max-width: 1440px;
+      min-height: 100vh;
+      background-position-y: -300px,300px;
+      background-position-x: -100px,700px;
+      justify-content: center;
+      background-color: hsl(185, 75%, 39%);
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-size:700px , 700px;
+      font-family: 'Kumbh Sans', sans-serif;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container{
+      display: flex;
+      width: 350px ;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      
+    }
+
+    .rating{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center;
+      
+    }
+     p , h6{
+      color: hsl(0, 0%, 59%);
+      font-weight: 400;
+      
+    }
+    strong{
+      color:#000;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .profile{
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+    .square{
+      position: relative;
+      
+    
+    }
+    .detail{
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    .bg-row{
+      position: absolute;
+      display: inherit;
+      top: 80px;
+      left: 120px;
+     
+    }
+    @media screen and (width=375px) {
+      body{
+        max-width: 375px;
+        background-position-x: -480px , 150px;
+        background-position-y: -420px , 300px;
+        
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="square">
+      <img src="images/bg-pattern-card.svg" alt="">
+      <div class="bg-row">
+        <img class="profile" src="images/image-victor.jpg" alt="">
+      
+        
+
+      
+      </div>
+      <div class="detail">
+        <p><strong>Victor Crest </strong>  26 </p>
+        <p>London</p>
+      </div>
+
+
+    </div>
+    <div class="rating">
+      <div class="small-square">
+        <h3>80K</h3>
+        <h6>Followers</h6>
+      </div>
+      <div class="small-square">
+        <h3>803K</h3>
+        <h6>Likes</h6>
+      </div>
+      <div class="small-square">
+        <h3>1.4K</h3>
+        <h6>Photos</h6>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">K.D.Abeysiriwardhane</a>.
+  </div>
+</body>
+</html>
